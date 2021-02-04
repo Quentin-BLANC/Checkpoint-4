@@ -2,12 +2,44 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Faire les bails écolos{% endblock %}</title>
+        <link rel="stylesheet" href="/styles/baseStyle.css">
         {% block stylesheets %}{% endblock %}
-
-        {% block javascripts %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header>
+            <a href="http://localhost:8000" style="text-decoration:none"><h1>Faire les bails écolos</h1></a>
+            <div class="socialMediaLogos">
+                <a href="https://joinmastodon.org/" target="_blank">
+                    <img src="/Images/logo/mastodon-logo.png" alt="Mastodon logo">
+                    <p>Mastodon</p>
+                </a>
+                <a href="https://pixelfed.org/" target="_blank">
+                    <img src="/Images/logo/pixelfed-logo.png" alt="Pixelfed logo">
+                    <p>Pixelfed</p>
+                </a>
+                <a href="https://diasporafoundation.org" target="_blank">
+                    <img src="/Images/logo/diaspora-logo.png" alt="Diaspora logo">
+                    <p>Diaspora</p>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="/Images/logo/facebook-logo.png" alt="Facebook logo">
+                    <p>Facebook</p>
+                </a>
+                <a href="https://twitter.com/?lang=fr" target="_blank">
+                    <img src="/Images/logo/twitter-logo.png" alt="Twitter logo">
+                    <p>Twitter</p>
+                </a>
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                    <img src="/Images/logo/linkedin-logo.png" alt="Linkedin logo">
+                    <p>Linkedin</p>
+                </a>
+            </div>
+        </header>
+        <body>
+            {% block body %}{% endblock %}
+        </body>
+        <footer>
+        </footer>
     </body>
 </html>
